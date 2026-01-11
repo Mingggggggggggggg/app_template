@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnPaste": true,
+    "dart.lineLength": 60,
+    "dart.renameFilesWithClasses": "prompt"
+}

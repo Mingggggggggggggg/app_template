@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "dart-code.flutter",
+        "vscjava.vscode-gradle",
+        "dart-code.dart-code",
+        "aaron-bond.better-comments",
+        "nash.awesome-flutter-snippets",
+        "kisstkondoros.vscode-gutter-preview",
+        "pkief.material-icon-theme"
+    ]
+}
