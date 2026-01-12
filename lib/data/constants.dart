@@ -7,7 +7,10 @@ class MainTextStyle {
     fontWeight: FontWeight.bold,
   );
 
-  static const descriptionText = TextStyle(
-    fontSize: 15
-  );
+  static const descriptionText = TextStyle(fontSize: 15);
+}
+
+class UserThemeConstants {
+  static const String userThemeKey = "userThemeKey";
+  static const String userColorSeed = "userColorSeed";
 }
