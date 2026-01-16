@@ -10,6 +10,16 @@ class MainTextStyle {
   static const descriptionText = TextStyle(fontSize: 15);
 }
 
+class NavigationTextStyle {
+  static const TextStyle titleText = TextStyle(
+    color: Colors.orange,
+    fontSize: 15,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle descriptionText = TextStyle(fontSize: 18);
+}
+
 class UserThemeConstants {
   static const String userThemeKey = "userThemeKey";
   static const String userColorSeed = "userColorSeed";
