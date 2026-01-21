@@ -22,5 +22,6 @@ class NavigationTextStyle {
 
 class UserThemeConstants {
   static const String userThemeKey = "userThemeKey";
+  static const String userAmoledKey = "userAmoledKey";
   static const String userColorSeed = "userColorSeed";
 }

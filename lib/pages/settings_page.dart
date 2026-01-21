@@ -54,10 +54,46 @@ class _SettingsPageState extends State<SettingsPage> {
                       );
                     },
                   ),
-                  SettingsButtonWidget(
-                    icon: Icons.abc,
-                    title: "test",
-                    onTap: () {},
+                  ValueListenableBuilder(
+                    valueListenable: darkmodeNotifier,
+                    builder: (context, isDarkMode, child) {
+                      return ValueListenableBuilder(
+                        valueListenable: amoledmodeNotifier,
+                        builder: (context, isAmoled, child) {
+                          return Padding(
+                            padding: const EdgeInsetsGeometry.directional(
+                              start: 20,
+                            ),
+                            child: AnimatedCrossFade(
+                              alignment: Alignment.topCenter,
+                              duration: const Duration(milliseconds: 150),
+                              firstChild: SizedBox(
+                                width: double.infinity,
+                                height: 0,
+                              ),
+                              secondChild: SettingsButtonWidget(
+                                icon: Icons.light_mode_rounded,
+                                title: "Amoled",
+                                onTap: () async {
+                                  amoledmodeNotifier.value =
+                                      !amoledmodeNotifier.value;
+                                  final SharedPreferences prefs =
+                                      await SharedPreferences.getInstance();
+                                  await prefs.setBool(
+                                    "userAmoledKey",
+                                    amoledmodeNotifier.value,
+                                  );
+                                },
+                              ),
+                              crossFadeState: !isDarkMode
+                                  ? CrossFadeState.showFirst
+                                  : CrossFadeState.showSecond,
+                              sizeCurve: Curves.easeInOut,
+                            ),
+                          );
+                        },
+                      );
+                    },
                   ),
                   SettingsButtonWidget(
                     icon: Icons.abc,

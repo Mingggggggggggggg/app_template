@@ -11,9 +11,11 @@ void main() {
 void initThemeData() async {
   prefs = await SharedPreferences.getInstance();
   bool? themeMode = prefs.getBool(UserThemeConstants.userThemeKey);
+  bool? amoledMode = prefs.getBool(UserThemeConstants.userAmoledKey);
   //! Color musst Int sein!!!
   int? colorSeed = prefs.getInt(UserThemeConstants.userColorSeed);
   darkmodeNotifier.value = themeMode ?? false;
+  amoledmodeNotifier.value = amoledMode ?? false;
   seedColorNotifier.value = colorSeed ?? Colors.teal.toARGB32();
 }
 
