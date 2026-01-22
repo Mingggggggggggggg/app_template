@@ -40,6 +40,7 @@ dependencies:
   http: ^1.6.0
   sqflite: ^2.4.2
   fluentui_system_icons: ^1.1.273
+  flutter_colorpicker: ^1.1.0
 
 dev_dependencies:
   flutter_test:
