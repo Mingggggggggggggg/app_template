@@ -1,4 +1,5 @@
 import 'package:app_template/data/classes/theme_manager.dart';
+import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/widget_tree.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,9 @@ class Main extends StatelessWidget {
         return SafeArea(
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+
             theme: themeManager.getThemeData(isDark: false),
             darkTheme: themeManager.getThemeData(isDark: true),
             themeMode: themeManager.themeMode,

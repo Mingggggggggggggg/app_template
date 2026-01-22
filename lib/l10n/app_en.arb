@@ -1,0 +1,31 @@
+{ "@@locale": "en",
+    "hello": "Hello {userName}",
+    "@hello": {
+        "placeholders": {
+            "userName": {
+                "type": "String",
+                "example": "John Doe"
+            }
+        }
+    },
+    "appearance": "Appearance",
+    "amoled": "AMOLED",
+    "lightmode": "Lightmode",
+    "darkmode": "Darkmode",
+    "colorpicker": "Colorpicker",
+    "contents": "Contents",
+    "privacyAndSecurity": "Privacy & Security",
+
+    "storage": "Storage",
+    "miscellaneous": "Miscellaneous",
+    "language": "Language",
+    "about": "About",
+    "logout": "Logout",
+
+    "selectColor": "Select a Color!",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "save": "Save",
+
+    "placeholder": "Placeholder"
+}

@@ -1,4 +1,5 @@
-﻿import 'package:app_template/main.dart';
+﻿import 'package:app_template/l10n/app_localizations.dart';
+import 'package:app_template/main.dart';
 import 'package:app_template/widgets/card_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
             listenable: themeManager,
             builder: (context, child) {
               return SliverAppBar(
-                title: Text("Hallo"),
+                title: Text(AppLocalizations.of(context)!.hello("userName")),
                 floating: true,
                 centerTitle: true,
               );

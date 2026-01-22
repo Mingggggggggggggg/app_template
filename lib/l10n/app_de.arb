@@ -1,0 +1,30 @@
+{ "@@locale": "de",
+    "hello": "Hello {userName}",
+    "@hello": {
+        "placeholders": {
+            "userName": {
+                "type": "String",
+                "example": "Max Mustermann"
+            }
+        }
+    },
+    "appearance": "Design",
+    "amoled": "AMOLED",
+    "lightmode": "Hellmodus",
+    "darkmode": "Dunkelmodus",
+    "colorpicker": "Farbrad",
+    "contents": "Inhalte",
+    "privacyAndSecurity": "Privatssphäre & Sicherheit",
+    "storage": "Speicher",
+    "miscellaneous": "Verschiedenes",
+    "language": "Sprache",
+    "about": "Über die App",
+    "logout": "Ausloggen",
+
+    "selectColor": "Wähle eine Farbe aus!",
+    "cancel": "Abbrechen",
+    "reset": "Reset",
+    "save": "Speichern",
+
+    "placeholder": "Platzhalter"
+}

@@ -1,10 +1,11 @@
 ﻿import 'package:app_template/data/constants.dart';
+import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/main.dart';
+import 'package:app_template/widgets/color_picker_dialog_widget.dart';
 import 'package:app_template/widgets/settings_button_widget.dart';
 import 'package:app_template/widgets/toggle_button_widget.dart';
 import 'package:app_template/widgets/user_details_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -44,15 +45,18 @@ class _SettingsPageState extends State<SettingsPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Appearance", style: NavigationTextStyle.titleText),
+                      Text(
+                        AppLocalizations.of(context)!.appearance,
+                        style: NavigationTextStyle.titleText,
+                      ),
                       ToggleButtonWidget(
                         value: themeManager.isDarkMode,
                         icon: themeManager.isDarkMode
                             ? Icons.light_mode_rounded
                             : Icons.dark_mode_rounded,
                         title: themeManager.isDarkMode
-                            ? "Lightmode"
-                            : "Darkmode",
+                            ? AppLocalizations.of(context)!.lightmode
+                            : AppLocalizations.of(context)!.darkmode,
                         onChanged: (value) async {
                           themeManager.setTheme(value);
                         },
@@ -70,7 +74,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           ),
                           secondChild: ToggleButtonWidget(
                             icon: Icons.lightbulb_sharp,
-                            title: "Amoled",
+                            title: AppLocalizations.of(context)!.amoled,
                             value: themeManager.isAmoled,
                             onChanged: (value) async {
                               themeManager.setAmoled(value);
@@ -84,54 +88,72 @@ class _SettingsPageState extends State<SettingsPage> {
                       ),
                       SettingsButtonWidget(
                         icon: Icons.palette_rounded,
-                        title: "Farbpalette",
-                        onTap: () {},
-                      ),
-                      Text("Contents", style: NavigationTextStyle.titleText),
-                      SettingsButtonWidget(
-                        icon: Icons.abc,
-                        title: "test",
-                        onTap: () {},
+                        title: AppLocalizations.of(context)!.colorpicker,
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (context) {
+                              return ColorPickerDialogWidget(
+                                currentColor: themeManager.seedColor,
+                                selectedColor: (value) {
+                                  themeManager.setColorSeed(value);
+                                },
+                              );
+                            },
+                          );
+                        },
                       ),
                       Text(
-                        "Privacy & Security",
+                        AppLocalizations.of(context)!.contents,
                         style: NavigationTextStyle.titleText,
                       ),
                       SettingsButtonWidget(
                         icon: Icons.abc,
-                        title: "test",
-                        onTap: () {},
-                      ),
-                      SettingsButtonWidget(
-                        icon: Icons.abc,
-                        title: "test",
-                        onTap: () {},
-                      ),
-                      Text("Storage", style: NavigationTextStyle.titleText),
-                      SettingsButtonWidget(
-                        icon: Icons.abc,
-                        title: "test",
+                        title: AppLocalizations.of(context)!.placeholder,
                         onTap: () {},
                       ),
                       Text(
-                        "Miscellaneous",
+                        AppLocalizations.of(context)!.privacyAndSecurity,
+                        style: NavigationTextStyle.titleText,
+                      ),
+                      SettingsButtonWidget(
+                        icon: Icons.abc,
+                        title: AppLocalizations.of(context)!.placeholder,
+                        onTap: () {},
+                      ),
+                      SettingsButtonWidget(
+                        icon: Icons.abc,
+                        title: AppLocalizations.of(context)!.placeholder,
+                        onTap: () {},
+                      ),
+                      Text(
+                        AppLocalizations.of(context)!.storage,
+                        style: NavigationTextStyle.titleText,
+                      ),
+                      SettingsButtonWidget(
+                        icon: Icons.abc,
+                        title: AppLocalizations.of(context)!.placeholder,
+                        onTap: () {},
+                      ),
+                      Text(
+                        AppLocalizations.of(context)!.miscellaneous,
                         style: NavigationTextStyle.titleText,
                       ),
                       SettingsButtonWidget(
                         icon: Icons.language,
-                        title: "Sprache",
+                        title: AppLocalizations.of(context)!.language,
                         onTap: () {
                           //TODO Sprache
                         },
                       ),
                       SettingsButtonWidget(
                         icon: Icons.info_rounded,
-                        title: "About",
+                        title: AppLocalizations.of(context)!.about,
                         onTap: () {},
                       ),
                       SettingsButtonWidget(
                         icon: Icons.logout_rounded,
-                        title: "Logout",
+                        title: AppLocalizations.of(context)!.logout,
                         onTap: () {},
                       ),
                     ],
