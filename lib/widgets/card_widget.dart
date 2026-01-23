@@ -19,6 +19,7 @@ class CardWidget extends StatelessWidget {
       width: double.infinity,
       padding: EdgeInsets.symmetric(vertical: 2),
       child: Card(
+        clipBehavior: Clip.antiAlias,
         child: InkWell(
           onTap: () => print("Test"),
           borderRadius: BorderRadius.circular(10),

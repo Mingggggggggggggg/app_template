@@ -5,6 +5,8 @@ class PlaceholderPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("Placeholder"));
+    return Scaffold(
+      body: Column(children: [Center(child: Text("Placeholder"))]),
+    );
   }
 }

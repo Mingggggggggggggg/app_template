@@ -1,6 +1,7 @@
 ﻿import 'package:app_template/data/constants.dart';
 import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/main.dart';
+import 'package:app_template/widgets/Dropdown%20Menu%20Select/dropdown_button_widget.dart';
 import 'package:app_template/widgets/color_picker_dialog_widget.dart';
 import 'package:app_template/widgets/settings_button_widget.dart';
 import 'package:app_template/widgets/toggle_button_widget.dart';
@@ -15,11 +16,10 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-  // create some values
+  // Standardwerte, Instanziierungen
   Color pickerColor = Color(0xff443a49);
   Color currentColor = Color(0xff443a49);
 
-  // ValueChanged<Color> callback
   void changeColor(Color color) {
     setState(() => pickerColor = color);
   }
@@ -139,12 +139,10 @@ class _SettingsPageState extends State<SettingsPage> {
                         AppLocalizations.of(context)!.miscellaneous,
                         style: NavigationTextStyle.titleText,
                       ),
-                      SettingsButtonWidget(
+                      DropdownButtonWidget(
                         icon: Icons.language,
                         title: AppLocalizations.of(context)!.language,
-                        onTap: () {
-                          //TODO Sprache
-                        },
+                        itemList: ["test1", "test2"],
                       ),
                       SettingsButtonWidget(
                         icon: Icons.info_rounded,
