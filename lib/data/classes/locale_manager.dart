@@ -1,14 +1,14 @@
 ﻿import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class LanguageManager extends ChangeNotifier {
+class LocaleManager extends ChangeNotifier {
   // Standard
   Locale _locale = const Locale("en", "UK");
 
   // Getter
   Locale get locale => _locale;
 
-  LanguageManager() {
+  LocaleManager() {
     _loadUserPreferences();
   }
 

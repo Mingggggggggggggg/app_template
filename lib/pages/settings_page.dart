@@ -28,8 +28,9 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListenableBuilder(
-        listenable: themeManager,
+        listenable: Listenable.merge([themeManager, localeManager]),
         builder: (context, child) {
+          final currentCode = localeManager.locale.languageCode.toUpperCase();
           return SingleChildScrollView(
             child: Padding(
               padding: EdgeInsets.all(15),
@@ -142,7 +143,13 @@ class _SettingsPageState extends State<SettingsPage> {
                       DropdownButtonWidget(
                         icon: Icons.language,
                         title: AppLocalizations.of(context)!.language,
-                        itemList: ["test1", "test2"],
+                        itemList: AppLocalizations.supportedLocales
+                            .map((e) => e.languageCode)
+                            .toList(),
+                        currentValue: currentCode,
+                        onChanged: (value) {
+                          localeManager.changeLocale(value);
+                        },
                       ),
                       SettingsButtonWidget(
                         icon: Icons.info_rounded,
