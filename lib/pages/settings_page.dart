@@ -1,6 +1,7 @@
 ﻿import 'package:app_template/data/constants.dart';
 import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/main.dart';
+import 'package:app_template/pages/about_page.dart';
 import 'package:app_template/widgets/Dropdown%20Menu%20Select/dropdown_button_widget.dart';
 import 'package:app_template/widgets/color_picker_dialog_widget.dart';
 import 'package:app_template/widgets/settings_button_widget.dart';
@@ -40,6 +41,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     firstName: "Vorname",
                     lastName: "Nachname",
                     email: "test@test.de",
+                    avatar: NetworkImage("https://picsum.photos/200"),
                   ),
                   Divider(thickness: 2),
                   SizedBox(height: 5),
@@ -74,7 +76,7 @@ class _SettingsPageState extends State<SettingsPage> {
                             height: 0,
                           ),
                           secondChild: ToggleButtonWidget(
-                            icon: Icons.lightbulb_sharp,
+                            icon: Icons.contrast_rounded,
                             title: AppLocalizations.of(context)!.amoled,
                             value: themeManager.isAmoled,
                             onChanged: (value) async {
@@ -154,7 +156,13 @@ class _SettingsPageState extends State<SettingsPage> {
                       SettingsButtonWidget(
                         icon: Icons.info_rounded,
                         title: AppLocalizations.of(context)!.about,
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => const AboutPage(),
+                            ),
+                          );
+                        },
                       ),
                       SettingsButtonWidget(
                         icon: Icons.logout_rounded,

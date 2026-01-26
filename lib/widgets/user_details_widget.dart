@@ -7,18 +7,21 @@ class UserDetailsWidget extends StatelessWidget {
     required this.firstName,
     required this.lastName,
     required this.email,
+    required this.avatar,
     this.onTap,
   });
 
   final String firstName;
   final String lastName;
   final String email;
+  final ImageProvider<Object>? avatar;
   final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     return ClipRect(
       child: InkWell(
+        borderRadius: BorderRadius.circular(20),
         onTap: () => print("Test"),
         child: Padding(
           padding: const EdgeInsets.all(5.0),
@@ -28,8 +31,8 @@ class UserDetailsWidget extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 30,
-                //! TODO Placeholder Bild entfernen
-                backgroundImage: NetworkImage("https://picsum.photos/200"),
+                backgroundColor: Colors.transparent,
+                backgroundImage: avatar,
               ),
               SizedBox(width: 16),
               Column(
