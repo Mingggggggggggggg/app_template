@@ -1,6 +1,5 @@
 ﻿import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/widgets/icon_detail_button_widget.dart';
-import 'package:app_template/widgets/settings_button_widget.dart';
 import 'package:app_template/widgets/user_details_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -36,22 +35,29 @@ class _AboutPageState extends State<AboutPage> {
                 email: "Co-Autor",
                 avatar: AssetImage("assets/images/authorPB.png"),
               ),
+              Divider(),
               IconDetailButtonWidget(
                 icon: Icons.mail,
-                title: "Kontakt",
-                subtitle: "mailadresse",
+                title: AppLocalizations.of(context)!.contact,
+                subtitle: AppLocalizations.of(context)!.placeholder,
                 onTap: () {},
               ),
               IconDetailButtonWidget(
                 icon: Icons.bug_report,
-                title: "Bugreport",
-                subtitle: "mailadresse",
+                title: AppLocalizations.of(context)!.bugreport,
+                subtitle: AppLocalizations.of(context)!.placeholder,
+                onTap: () {},
+              ),
+              IconDetailButtonWidget(
+                icon: Icons.home_work_outlined,
+                title: AppLocalizations.of(context)!.imprint,
+                subtitle: AppLocalizations.of(context)!.placeholder,
                 onTap: () {},
               ),
               IconDetailButtonWidget(
                 icon: Icons.phone_android,
-                title: "Appversion",
-                subtitle: "Version 0.0.1",
+                title: AppLocalizations.of(context)!.appversion,
+                subtitle: AppLocalizations.of(context)!.placeholder,
                 onTap: () {},
               ),
             ],

@@ -2,6 +2,7 @@
 import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/main.dart';
 import 'package:app_template/pages/about_page.dart';
+import 'package:app_template/pages/login_page.dart';
 import 'package:app_template/widgets/Dropdown%20Menu%20Select/dropdown_button_widget.dart';
 import 'package:app_template/widgets/color_picker_dialog_widget.dart';
 import 'package:app_template/widgets/settings_button_widget.dart';
@@ -167,7 +168,14 @@ class _SettingsPageState extends State<SettingsPage> {
                       SettingsButtonWidget(
                         icon: Icons.logout_rounded,
                         title: AppLocalizations.of(context)!.logout,
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LoginPage(),
+                            ),
+                          );
+                        },
                       ),
                     ],
                   ),

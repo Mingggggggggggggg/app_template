@@ -8,6 +8,12 @@
             }
         }
     },
+
+    "loginName": "Benutzername / Emailadresse ",
+    "password": "Passwort",
+    "login": "Login",
+    "register": "Registrieren",
+
     "appearance": "Design",
     "amoled": "AMOLED",
     "lightmode": "Hellmodus",
@@ -25,6 +31,11 @@
     "cancel": "Abbrechen",
     "reset": "Reset",
     "save": "Speichern",
+
+    "contact": "Contact",
+    "bugreport": "Bugreport",
+    "imprint": "Imprint",
+    "appversion": "Appversion",
 
     "placeholder": "Platzhalter"
 }

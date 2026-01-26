@@ -104,6 +104,30 @@ abstract class AppLocalizations {
   /// **'Hello {userName}'**
   String hello(String userName);
 
+  /// No description provided for @loginName.
+  ///
+  /// In en, this message translates to:
+  /// **'Username / Email address '**
+  String get loginName;
+
+  /// No description provided for @password.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password;
+
+  /// No description provided for @login.
+  ///
+  /// In en, this message translates to:
+  /// **'Login'**
+  String get login;
+
+  /// No description provided for @register.
+  ///
+  /// In en, this message translates to:
+  /// **'Register'**
+  String get register;
+
   /// No description provided for @appearance.
   ///
   /// In en, this message translates to:
@@ -199,6 +223,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Save'**
   String get save;
+
+  /// No description provided for @contact.
+  ///
+  /// In en, this message translates to:
+  /// **'Kontakt'**
+  String get contact;
+
+  /// No description provided for @bugreport.
+  ///
+  /// In en, this message translates to:
+  /// **'Fehler melden'**
+  String get bugreport;
+
+  /// No description provided for @imprint.
+  ///
+  /// In en, this message translates to:
+  /// **'Impressum'**
+  String get imprint;
+
+  /// No description provided for @appversion.
+  ///
+  /// In en, this message translates to:
+  /// **'Appversion'**
+  String get appversion;
 
   /// No description provided for @placeholder.
   ///

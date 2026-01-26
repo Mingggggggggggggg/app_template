@@ -14,6 +14,18 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get loginName => 'Benutzername / Emailadresse ';
+
+  @override
+  String get password => 'Passwort';
+
+  @override
+  String get login => 'Login';
+
+  @override
+  String get register => 'Registrieren';
+
+  @override
   String get appearance => 'Design';
 
   @override
@@ -60,6 +72,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get save => 'Speichern';
+
+  @override
+  String get contact => 'Contact';
+
+  @override
+  String get bugreport => 'Bugreport';
+
+  @override
+  String get imprint => 'Imprint';
+
+  @override
+  String get appversion => 'Appversion';
 
   @override
   String get placeholder => 'Platzhalter';
