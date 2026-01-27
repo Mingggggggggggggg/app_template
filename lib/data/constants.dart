@@ -20,6 +20,14 @@ class NavigationTextStyle {
   static const TextStyle descriptionText = TextStyle(fontSize: 18);
 }
 
+class AlertTextStyle {
+  static const TextStyle alertText = TextStyle(
+    color: Colors.redAccent,
+    fontSize: 15,
+    fontWeight: FontWeight.bold,
+  );
+}
+
 class UserThemeConstants {
   static const String userThemeKey = "userThemeKey";
   static const String userAmoledKey = "userAmoledKey";
