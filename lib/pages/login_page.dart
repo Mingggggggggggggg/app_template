@@ -41,6 +41,7 @@ class _LoginPageState extends State<LoginPage> {
     Future.delayed(const Duration(seconds: 2), () {
       setState(() {
         _isLoading = false;
+        errorMessage = "Invalid Login credentials";
       });
     });
   }
@@ -62,6 +63,14 @@ class _LoginPageState extends State<LoginPage> {
               AnimatedCrossFade(
                 firstChild: Column(
                   children: [
+                    errorMessage != null
+                        ? SizedBox(
+                            child: Text(
+                              errorMessage!,
+                              style: AlertTextStyle.alertText,
+                            ),
+                          )
+                        : SizedBox(height: 0),
                     TextField(
                       controller: controllerUsername,
                       decoration: InputDecoration(

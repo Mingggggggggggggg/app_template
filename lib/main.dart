@@ -2,6 +2,7 @@ import 'package:app_template/data/classes/theme_manager.dart';
 import 'package:app_template/data/classes/locale_manager.dart';
 import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/pages/login_page.dart';
+import 'package:app_template/widget_tree.dart';
 import 'package:flutter/material.dart';
 
 final themeManager = ThemeManager();
