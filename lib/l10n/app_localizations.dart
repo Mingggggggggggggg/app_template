@@ -200,6 +200,18 @@ abstract class AppLocalizations {
   /// **'Logout'**
   String get logout;
 
+  /// No description provided for @cardSize.
+  ///
+  /// In en, this message translates to:
+  /// **'Card Size'**
+  String get cardSize;
+
+  /// No description provided for @osLicense.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Source Licenses'**
+  String get osLicense;
+
   /// No description provided for @selectColor.
   ///
   /// In en, this message translates to:
@@ -227,7 +239,7 @@ abstract class AppLocalizations {
   /// No description provided for @contact.
   ///
   /// In en, this message translates to:
-  /// **'Kontakt'**
+  /// **'Contact'**
   String get contact;
 
   /// No description provided for @bugreport.

@@ -11,7 +11,7 @@
 
     "loginName": "Benutzername / Emailadresse ",
     "password": "Passwort",
-    "login": "Login",
+    "login": "Anmelden",
     "register": "Registrieren",
 
     "appearance": "Design",
@@ -25,14 +25,18 @@
     "miscellaneous": "Verschiedenes",
     "language": "Sprache",
     "about": "Über die App",
-    "logout": "Ausloggen",
+    "logout": "Abmelden",
+
+    "cardSize": "Kartengröße",
+
+    "osLicense": "Open Source Lizenzen",
 
     "selectColor": "Wähle eine Farbe aus!",
     "cancel": "Abbrechen",
     "reset": "Reset",
     "save": "Speichern",
 
-    "contact": "Contact",
+    "contact": "Kontakt",
     "bugreport": "Bugreport",
     "imprint": "Imprint",
     "appversion": "Appversion",

@@ -1,5 +1,4 @@
 ﻿import 'package:app_template/data/classes/login_status_manager.dart';
-import 'package:app_template/data/services/log_auth.dart';
 import 'package:app_template/data/constants.dart';
 import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/widget_tree.dart';
@@ -116,7 +115,6 @@ class _LoginPageState extends State<LoginPage> {
                               height: 24,
                               padding: const EdgeInsets.all(2.0),
                               child: const CircularProgressIndicator(
-                                color: Colors.white,
                                 strokeWidth: 3,
                               ),
                             )

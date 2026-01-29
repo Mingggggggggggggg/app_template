@@ -112,8 +112,8 @@ class _SettingsPageState extends State<SettingsPage> {
                         style: NavigationTextStyle.titleText,
                       ),
                       SettingsButtonWidget(
-                        icon: Icons.abc,
-                        title: AppLocalizations.of(context)!.placeholder,
+                        icon: Icons.view_stream,
+                        title: AppLocalizations.of(context)!.cardSize,
                         onTap: () {},
                       ),
                       Text(

@@ -62,6 +62,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get logout => 'Logout';
 
   @override
+  String get cardSize => 'Card Size';
+
+  @override
+  String get osLicense => 'Open Source Licenses';
+
+  @override
   String get selectColor => 'Select a Color!';
 
   @override
@@ -74,7 +80,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get save => 'Save';
 
   @override
-  String get contact => 'Kontakt';
+  String get contact => 'Contact';
 
   @override
   String get bugreport => 'Fehler melden';

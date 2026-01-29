@@ -20,7 +20,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get password => 'Passwort';
 
   @override
-  String get login => 'Login';
+  String get login => 'Anmelden';
 
   @override
   String get register => 'Registrieren';
@@ -59,7 +59,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get about => 'Über die App';
 
   @override
-  String get logout => 'Ausloggen';
+  String get logout => 'Abmelden';
+
+  @override
+  String get cardSize => 'Kartengröße';
+
+  @override
+  String get osLicense => 'Open Source Lizenzen';
 
   @override
   String get selectColor => 'Wähle eine Farbe aus!';
@@ -74,7 +80,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get save => 'Speichern';
 
   @override
-  String get contact => 'Contact';
+  String get contact => 'Kontakt';
 
   @override
   String get bugreport => 'Bugreport';

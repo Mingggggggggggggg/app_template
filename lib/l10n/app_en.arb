@@ -21,19 +21,22 @@
     "colorpicker": "Colorpicker",
     "contents": "Contents",
     "privacyAndSecurity": "Privacy & Security",
-
     "storage": "Storage",
     "miscellaneous": "Miscellaneous",
     "language": "Language",
     "about": "About",
     "logout": "Logout",
 
+    "cardSize": "Card Size",
+
+    "osLicense": "Open Source Licenses",
+
     "selectColor": "Select a Color!",
     "cancel": "Cancel",
     "reset": "Reset",
     "save": "Save",
 
-    "contact": "Kontakt",
+    "contact": "Contact",
     "bugreport": "Fehler melden",
     "imprint": "Impressum",
     "appversion": "Appversion",

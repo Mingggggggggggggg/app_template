@@ -1,4 +1,5 @@
 ﻿import 'package:app_template/l10n/app_localizations.dart';
+import 'package:app_template/pages/open_source_licenses_page/open_source_page.dart';
 import 'package:app_template/widgets/icon_detail_button_widget.dart';
 import 'package:app_template/widgets/user_details_widget.dart';
 import 'package:flutter/material.dart';
@@ -41,6 +42,19 @@ class _AboutPageState extends State<AboutPage> {
                 title: AppLocalizations.of(context)!.contact,
                 subtitle: AppLocalizations.of(context)!.placeholder,
                 onTap: () {},
+              ),
+              IconDetailButtonWidget(
+                icon: Icons.all_inclusive_rounded,
+                title: AppLocalizations.of(context)!.osLicense,
+                subtitle: AppLocalizations.of(context)!.placeholder,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const OpenSourcePage(),
+                    ),
+                  );
+                },
               ),
               IconDetailButtonWidget(
                 icon: Icons.bug_report,
