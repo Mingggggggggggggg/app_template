@@ -10,6 +10,10 @@ import 'package:flutter/material.dart';
     (bg: Colors.red.shade100, text: Colors.red.shade900),
     (bg: Colors.teal.shade100, text: Colors.teal.shade900),
     (bg: Colors.amber.shade100, text: Colors.amber.shade900),
+    (bg: Colors.brown.shade100, text: Colors.brown.shade900),
+    (bg: Colors.pink.shade100, text: Colors.pink.shade900),
+    (bg: Colors.indigo.shade100, text: Colors.indigo.shade900),
+    (bg: Colors.lime.shade100, text: Colors.lime.shade900),
   ];
 
   return themes[tag.hashCode.abs() % themes.length];

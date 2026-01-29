@@ -14,13 +14,23 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // Dummy Daten zum Testen
   final List<CardItem> _items = List.generate(10, (index) {
     return PostEntry(
       id: "CardID_$index",
       title: "Hallo mein Haus brennt",
       dateTime: DateTime.now(),
-      tags: index % 3 == 0 ? ["Hilfe", "Ofen", "Garten"] : ["Sonst"],
+      tags: index % 2 == 0
+          ? [
+              "Hilfe",
+              "Ofen",
+              "Garten",
+              "ssssssssssssssA",
+              "Baaaaaaaaaaa",
+              "CCCCCCCCC",
+              "awdwadadw",
+              "awdwadadw2323",
+            ]
+          : ["Sonst"],
       content: [
         ContentBlock(
           """Ja also ich wollte meine Küche in eine Hotbox verwandeln und habe vllt Wasser und Gras im Ofen bei Umluft abgestellt""",
