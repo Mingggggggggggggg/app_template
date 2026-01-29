@@ -27,8 +27,9 @@ class CardDetailWidget extends StatelessWidget {
                 child: Text(item.title, style: MainTextStyle.titleText),
               ),
             ),
+            const SizedBox(height: 5),
             CardTagWidget(item: item),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -36,7 +37,7 @@ class CardDetailWidget extends StatelessWidget {
                 Text(
                   "${item.dateTime.day}.${item.dateTime.month}.${item.dateTime.year}",
                 ),
-                SizedBox(width: 5),
+                const SizedBox(width: 5),
               ],
             ),
             Divider(height: 30),

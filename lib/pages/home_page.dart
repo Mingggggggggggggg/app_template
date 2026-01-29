@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
           attachments: [CardImage("https://picsum.photos/200/300")],
         ),
         ContentBlock(
-          """Jetzt ist das alles außer Kontrolle geraten und meine Küche stand in Flammen""",
+          """Jetzt ist das alles außer Kontrolle geraten und meine Küche steht in Flammen""",
           attachments: [
             CardImage("https://picsum.photos/200/302"),
             CardImage("https://picsum.photos/201/300"),

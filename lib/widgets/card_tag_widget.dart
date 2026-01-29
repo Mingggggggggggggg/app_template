@@ -37,7 +37,7 @@ class CardTagWidget extends StatelessWidget {
             tag,
             style: TextStyle(
               color: theme.text,
-              fontSize: 12,
+              fontSize: 13,
               fontWeight: FontWeight.bold,
             ),
           ),
