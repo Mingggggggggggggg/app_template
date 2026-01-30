@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
             listenable: themeManager,
             builder: (context, child) {
               return SliverAppBar(
-                title: Text(AppLocalizations.of(context)!.hello("User")),
+                title: Text(AppLocalizations.of(context)!.hello("TestUser")),
                 floating: true,
                 centerTitle: true,
               );
@@ -72,15 +72,7 @@ class _HomePageState extends State<HomePage> {
 
               return CardWidget(
                 item: item,
-                onTap: () {
-                  // Navigation zur Detailseite
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => CardDetailWidget(item: item),
-                    ),
-                  );
-                },
+                destinationPage: CardDetailWidget(item: item),
               );
             }, childCount: _items.length),
           ),

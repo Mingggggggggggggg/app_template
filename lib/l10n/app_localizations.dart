@@ -128,6 +128,12 @@ abstract class AppLocalizations {
   /// **'Register'**
   String get register;
 
+  /// No description provided for @invalidCredentials.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid Login Credentials'**
+  String get invalidCredentials;
+
   /// No description provided for @appearance.
   ///
   /// In en, this message translates to:

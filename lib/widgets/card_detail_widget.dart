@@ -19,14 +19,9 @@ class CardDetailWidget extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+
           children: [
-            Hero(
-              tag: "CardID_${item.id}",
-              child: Material(
-                type: MaterialType.transparency,
-                child: Text(item.title, style: MainTextStyle.titleText),
-              ),
-            ),
+            Text(item.title, style: MainTextStyle.titleText),
             const SizedBox(height: 5),
             CardTagWidget(item: item),
             const SizedBox(height: 10),

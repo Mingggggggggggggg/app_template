@@ -26,6 +26,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get register => 'Register';
 
   @override
+  String get invalidCredentials => 'Invalid Login Credentials';
+
+  @override
   String get appearance => 'Appearance';
 
   @override

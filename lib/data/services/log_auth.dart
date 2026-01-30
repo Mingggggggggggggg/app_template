@@ -1,4 +1,6 @@
-﻿import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+﻿import 'package:app_template/l10n/app_localizations.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 // import 'package:flutter_appauth/flutter_appauth.dart';
 
 // Simulierter Login und Authentifizierung
@@ -20,7 +22,7 @@ class LogAuth {
     await Future.delayed(Duration(seconds: 2));
 
     if (userName != "test" && password != "test") {
-      throw Exception("Benutzername oder Passwort ungültig");
+      throw Exception("Invalid Login Credentials");
     }
 
     const fakeToken = "xddddddd12345_AccessToken_420_69_6767676767";

@@ -13,6 +13,7 @@
     "password": "Password",
     "login": "Login",
     "register": "Register",
+    "invalidCredentials": "Invalid Login Credentials",
 
     "appearance": "Appearance",
     "amoled": "AMOLED",

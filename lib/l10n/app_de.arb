@@ -13,6 +13,8 @@
     "password": "Passwort",
     "login": "Anmelden",
     "register": "Registrieren",
+    "invalidCredentials": "Ungültigeg Zugangsdaten",
+
 
     "appearance": "Design",
     "amoled": "AMOLED",
