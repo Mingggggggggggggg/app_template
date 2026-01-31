@@ -18,6 +18,11 @@ class NavigationTextStyle {
   );
 
   static const TextStyle descriptionText = TextStyle(fontSize: 18);
+
+  static const TextStyle userSelect = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.bold,
+  );
 }
 
 class AlertTextStyle {

@@ -83,6 +83,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get save => 'Speichern';
 
   @override
+  String get delete => 'Löschen';
+
+  @override
   String get contact => 'Kontakt';
 
   @override
@@ -96,4 +99,25 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get placeholder => 'Platzhalter';
+
+  @override
+  String get inputTitle => 'Titel eingeben';
+
+  @override
+  String get inputContent => 'Inhalt eingeben';
+
+  @override
+  String get inputTag => 'Tags eingeben';
+
+  @override
+  String get newTag => 'Neuer Tag';
+
+  @override
+  String get editTag => 'Tag bearbeiten';
+
+  @override
+  String get noDateSelected => 'Kein Datum ausgewählt';
+
+  @override
+  String get selectDate => 'Datum auswählen';
 }

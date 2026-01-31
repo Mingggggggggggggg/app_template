@@ -37,11 +37,21 @@
     "cancel": "Abbrechen",
     "reset": "Reset",
     "save": "Speichern",
+    "delete": "Löschen",
 
     "contact": "Kontakt",
     "bugreport": "Bugreport",
     "imprint": "Imprint",
     "appversion": "Appversion",
 
-    "placeholder": "Platzhalter"
+    "placeholder": "Platzhalter",
+
+    "inputTitle": "Titel eingeben",
+    "inputContent": "Inhalt eingeben",
+    "inputTag": "Tags eingeben",
+    "newTag": "Neuer Tag",
+    "editTag": "Tag bearbeiten",
+
+    "noDateSelected": "Kein Datum ausgewählt",
+    "selectDate": "Datum auswählen"
 }

@@ -242,6 +242,12 @@ abstract class AppLocalizations {
   /// **'Save'**
   String get save;
 
+  /// No description provided for @delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
   /// No description provided for @contact.
   ///
   /// In en, this message translates to:
@@ -271,6 +277,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Placeholder'**
   String get placeholder;
+
+  /// No description provided for @inputTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Input Title'**
+  String get inputTitle;
+
+  /// No description provided for @inputContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Input Content'**
+  String get inputContent;
+
+  /// No description provided for @inputTag.
+  ///
+  /// In en, this message translates to:
+  /// **'Input Tags'**
+  String get inputTag;
+
+  /// No description provided for @newTag.
+  ///
+  /// In en, this message translates to:
+  /// **'New Tag'**
+  String get newTag;
+
+  /// No description provided for @editTag.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Tag'**
+  String get editTag;
+
+  /// No description provided for @noDateSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'No Date Selected'**
+  String get noDateSelected;
+
+  /// No description provided for @selectDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Date'**
+  String get selectDate;
 }
 
 class _AppLocalizationsDelegate

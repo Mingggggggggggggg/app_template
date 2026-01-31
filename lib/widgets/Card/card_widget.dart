@@ -1,7 +1,7 @@
 ﻿import 'package:app_template/data/classes/card/card_data.dart';
 import 'package:animations/animations.dart';
 import 'package:app_template/data/constants.dart';
-import 'package:app_template/widgets/card_tag_widget.dart';
+import 'package:app_template/widgets/Tags/card_tag_widget.dart';
 import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
@@ -16,23 +16,30 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cardColor = Theme.of(context).colorScheme.surfaceContainerLow;
+    final scaffoldColor = Theme.of(context).scaffoldBackgroundColor;
+    final borderColor = Theme.of(
+      context,
+    ).colorScheme.outline.withValues(alpha: 0.2);
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
       child: OpenContainer(
-        clipBehavior: Clip.antiAlias,
+        //clipBehavior: Clip.antiAlias,
         transitionType: ContainerTransitionType.fade,
-        closedElevation: 2,
+        closedElevation: 0,
         openElevation: 0,
         closedShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
+          side: BorderSide(color: borderColor, width: 1),
         ),
-        closedColor: Theme.of(context).colorScheme.surfaceContainerLow,
-        openColor: Theme.of(context).scaffoldBackgroundColor,
+        closedColor: cardColor,
+        openColor: scaffoldColor,
 
-        transitionDuration: const Duration(milliseconds: 500),
+        transitionDuration: const Duration(milliseconds: 300),
 
         openBuilder: (context, action) {
-          return destinationPage;
+          return Container(color: scaffoldColor, child: destinationPage);
         },
 
         closedBuilder: (context, openContainer) {
@@ -47,7 +54,7 @@ class CardWidget extends StatelessWidget {
 
                 if (item.tags.isNotEmpty) ...[
                   const SizedBox(height: 8),
-                  CardTagWidget(item: item),
+                  CardTagWidget.fromItem(item),
                 ],
 
                 const SizedBox(height: 8),

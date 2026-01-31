@@ -1,6 +1,4 @@
-﻿import 'package:app_template/l10n/app_localizations.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+﻿import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 // import 'package:flutter_appauth/flutter_appauth.dart';
 
 // Simulierter Login und Authentifizierung
@@ -21,7 +19,7 @@ class LogAuth {
     // Beep boop es tut sich was getData i guess
     await Future.delayed(Duration(seconds: 2));
 
-    if (userName != "test" && password != "test") {
+    if ((userName != "test") || (password != "test")) {
       throw Exception("Invalid Login Credentials");
     }
 

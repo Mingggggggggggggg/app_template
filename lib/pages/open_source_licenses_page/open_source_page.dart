@@ -1,5 +1,5 @@
 ﻿import 'package:app_template/l10n/app_localizations.dart';
-import 'package:app_template/widgets/icon_detail_button_widget.dart';
+import 'package:app_template/widgets/Buttons/icon_detail_button_widget.dart';
 import 'package:flutter/material.dart';
 
 class OpenSourcePage extends StatelessWidget {

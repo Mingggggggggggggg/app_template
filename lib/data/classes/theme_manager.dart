@@ -32,6 +32,7 @@ class ThemeManager extends ChangeNotifier {
 
     if (useAmoled) {
       theme = theme.copyWith(
+        // Colors.black, um transparenzprobleme zu vermeiden
         scaffoldBackgroundColor: Colors.black,
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.black,

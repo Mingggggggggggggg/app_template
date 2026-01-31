@@ -36,11 +36,21 @@
     "cancel": "Cancel",
     "reset": "Reset",
     "save": "Save",
+    "delete": "Delete",
 
     "contact": "Contact",
     "bugreport": "Fehler melden",
     "imprint": "Impressum",
     "appversion": "Appversion",
 
-    "placeholder": "Placeholder"
+    "placeholder": "Placeholder",
+
+    "inputTitle": "Input Title",
+    "inputContent": "Input Content",
+    "inputTag": "Input Tags",
+    "newTag": "New Tag",
+    "editTag": "Edit Tag",
+
+    "noDateSelected": "No Date Selected",
+    "selectDate": "Select Date"
 }

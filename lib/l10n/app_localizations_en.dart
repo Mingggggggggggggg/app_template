@@ -83,6 +83,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get save => 'Save';
 
   @override
+  String get delete => 'Delete';
+
+  @override
   String get contact => 'Contact';
 
   @override
@@ -96,4 +99,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get placeholder => 'Placeholder';
+
+  @override
+  String get inputTitle => 'Input Title';
+
+  @override
+  String get inputContent => 'Input Content';
+
+  @override
+  String get inputTag => 'Input Tags';
+
+  @override
+  String get newTag => 'New Tag';
+
+  @override
+  String get editTag => 'Edit Tag';
+
+  @override
+  String get noDateSelected => 'No Date Selected';
+
+  @override
+  String get selectDate => 'Select Date';
 }

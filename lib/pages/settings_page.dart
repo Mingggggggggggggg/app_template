@@ -5,9 +5,9 @@ import 'package:app_template/pages/about_page.dart';
 import 'package:app_template/pages/login_page.dart';
 import 'package:app_template/widgets/Dropdown%20Menu%20Select/dropdown_button_widget.dart';
 import 'package:app_template/widgets/color_picker_dialog_widget.dart';
-import 'package:app_template/widgets/settings_button_widget.dart';
-import 'package:app_template/widgets/toggle_button_widget.dart';
-import 'package:app_template/widgets/user_details_widget.dart';
+import 'package:app_template/widgets/Buttons/settings_button_widget.dart';
+import 'package:app_template/widgets/Buttons/toggle_button_widget.dart';
+import 'package:app_template/widgets/Buttons/user_details_widget.dart';
 import 'package:flutter/material.dart';
 
 class SettingsPage extends StatefulWidget {

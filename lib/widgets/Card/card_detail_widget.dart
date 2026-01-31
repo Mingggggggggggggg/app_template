@@ -1,6 +1,6 @@
 ﻿import 'package:app_template/data/classes/card/card_data.dart';
 import 'package:app_template/data/constants.dart';
-import 'package:app_template/widgets/card_tag_widget.dart';
+import 'package:app_template/widgets/Tags/card_tag_widget.dart';
 import 'package:flutter/material.dart';
 
 class CardDetailWidget extends StatelessWidget {
@@ -23,7 +23,7 @@ class CardDetailWidget extends StatelessWidget {
           children: [
             Text(item.title, style: MainTextStyle.titleText),
             const SizedBox(height: 5),
-            CardTagWidget(item: item),
+            CardTagWidget.fromItem(item),
             const SizedBox(height: 10),
 
             Row(

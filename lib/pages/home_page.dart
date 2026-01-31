@@ -2,8 +2,8 @@
 import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/main.dart';
 import 'package:app_template/pages/create_card_page.dart';
-import 'package:app_template/widgets/card_detail_widget.dart';
-import 'package:app_template/widgets/card_widget.dart';
+import 'package:app_template/widgets/Card/card_detail_widget.dart';
+import 'package:app_template/widgets/Card/card_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
           """Ja also ich wollte meine Küche in eine Hotbox verwandeln und habe vllt Wasser und Gras im Ofen bei Umluft abgestellt""",
         ),
         ContentBlock(
-          "Das Problem ist nun, dass die Ablage in der das Gras und das Wasser lag anscheinend sehr schnell brennt und ich habe ein Gasofen",
+          "Das Problem ist nun, dass die *Ablage* in der das Gras und das Wasser lag anscheinend sehr schnell brennt und ich habe ein Gasofen",
           attachments: [CardImage("https://picsum.photos/200/300")],
         ),
         ContentBlock(

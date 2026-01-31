@@ -1,4 +1,5 @@
-﻿import 'package:flutter/material.dart';
+﻿import 'package:app_template/widgets/date_picker_widget.dart';
+import 'package:flutter/material.dart';
 
 class PlaceholderPage extends StatelessWidget {
   const PlaceholderPage({super.key});
@@ -6,7 +7,13 @@ class PlaceholderPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [Center(child: Text("Placeholder"))]),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(child: Text("Placeholder")),
+          DatePickerWidget(),
+        ],
+      ),
     );
   }
 }
