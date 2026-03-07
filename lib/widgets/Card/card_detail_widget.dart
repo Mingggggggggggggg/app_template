@@ -1,4 +1,4 @@
-﻿import 'package:app_template/data/classes/card/card_data.dart';
+﻿import 'package:app_template/data/classes/models/card_data.dart';
 import 'package:app_template/data/constants.dart';
 import 'package:app_template/widgets/Tags/card_tag_widget.dart';
 import 'package:flutter/material.dart';

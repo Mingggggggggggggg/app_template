@@ -1,4 +1,4 @@
-﻿import 'package:app_template/data/classes/card/card_data.dart';
+﻿import 'package:app_template/data/classes/models/card_data.dart';
 import 'package:app_template/l10n/app_localizations.dart';
 import 'package:app_template/main.dart';
 import 'package:app_template/pages/create_card_page.dart';

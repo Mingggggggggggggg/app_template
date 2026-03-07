@@ -74,8 +74,7 @@ class _CreateCardPageState extends State<CreateCardPage> {
                 ],
               ),
 
-              const SizedBox(height: 10),
-
+              //const SizedBox(height: 5),
               const Text(
                 "Tags",
                 style: TextStyle(
