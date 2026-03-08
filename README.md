@@ -14,7 +14,6 @@ Diese Repository enthält ein robustes, modulares Flutter-Template für Audit- u
   - CRUD für Audits
   - Einbindung der Handykamera
   - PDF Export
-  - 
 
 ## Architektur & Technologien
   - Framework: Flutter
