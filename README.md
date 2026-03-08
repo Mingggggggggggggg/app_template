@@ -1,3 +1,3 @@
-# app_template
+# App Template for Audit App
 
 A Template for an Audit Application. The UI can be reused for other projects.
