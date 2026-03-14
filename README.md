@@ -10,7 +10,7 @@ Diese Repository enthält ein robustes, modulares Flutter-Template für Audit- u
 
 
 ## Geplant
-  - Einbindung/Synchronisation an Cloudanbieter
+  - Einbindung/Synchronisation an Cloudanbieter (pcloud Integration)
   - CRUD für Audits
   - Einbindung der Handykamera
   - PDF Export
