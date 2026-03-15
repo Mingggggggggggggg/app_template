@@ -1,5 +1,4 @@
 ﻿import 'package:app_template/data/classes/models/block_wrapper.dart';
-import 'package:app_template/data/constants.dart';
 import 'package:flutter/material.dart';
 
 class BlockEditor extends StatefulWidget {

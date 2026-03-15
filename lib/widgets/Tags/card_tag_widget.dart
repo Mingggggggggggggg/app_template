@@ -71,7 +71,7 @@ class CardTagWidget extends StatelessWidget {
           return chip;
         }),
 
-        if (trailing != null) trailing!,
+        ?trailing,
       ],
     );
   }

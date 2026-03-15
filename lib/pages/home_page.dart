@@ -60,7 +60,9 @@ class _HomePageState extends State<HomePage> {
             listenable: themeManager,
             builder: (context, child) {
               return SliverAppBar(
-                title: Text(AppLocalizations.of(context)!.hello("TestUser")),
+                title: Text(
+                  AppLocalizations.of(context)!.hello("TestUser"),
+                ), // MainPage Überschrift
                 floating: true,
                 centerTitle: true,
               );
