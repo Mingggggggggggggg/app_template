@@ -82,21 +82,25 @@ class _TagEditorState extends State<TagEditor> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade400),
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: CardTagWidget(
-        tags: _tags,
-        onTap: (tag, index) => _showTagDialog(existingTag: tag, index: index),
-        trailing: IconButton.filledTonal(
-          onPressed: () => _showTagDialog(),
-          icon: const Icon(Icons.add),
-          constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
-          style: IconButton.styleFrom(padding: EdgeInsets.zero, iconSize: 18),
+    return InkWell(
+      onTap: () => _showTagDialog(),
+      borderRadius: BorderRadius.circular(15),
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.all(5),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey.shade400),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: CardTagWidget(
+          tags: _tags,
+          onTap: (tag, index) => _showTagDialog(existingTag: tag, index: index),
+          trailing: IconButton.filledTonal(
+            onPressed: () => _showTagDialog(),
+            icon: const Icon(Icons.add),
+            constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
+            style: IconButton.styleFrom(padding: EdgeInsets.zero, iconSize: 18),
+          ),
         ),
       ),
     );
